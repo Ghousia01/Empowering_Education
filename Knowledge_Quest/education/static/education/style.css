@@ -1,0 +1,14 @@
+body{
+  background-image: url(./image.jpg);
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: 67%;
+}
+.hover-effect:hover {
+
+  text-decoration: underline; /* Add underline on hover */
+  background-color:coral ;
+}
+.custom-link {
+  color: green;
+}
+

@@ -1,0 +1,29 @@
+{% extends 'education/base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    {% block body %}
+    {% for resource in resource_list%}
+    
+    <br>
+    <br>
+    <div class="row" >
+        
+        <div class="col-md-4 offset-md-8",>
+            <div style="border: 1px solid #000;background-color:bisque ;text-align: center;" >
+                <a class="text-decoration-none hover-effect" href="{% url 'education:detail' resource.id %}" style="color: green;">{{ resource.title }}</a> 
+            </div>
+        </div>
+    </div>
+    {% endfor%}
+    {% endblock%}    
+</body>
+</html>
+

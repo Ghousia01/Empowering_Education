@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: 'Poppins',sans-serif;
+            
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color:#fff8d3;
+            border-radius: 8px;
+            border-radius: 50px;
+
+        }
+
+        h1 {
+            text-align: center; 
+            margin-bottom: 20px; 
+            color: #245843; 
+        }
+
+        #p1 p {
+            text-align: center;
+            margin-bottom: 10px; 
+            font-family: Poppins;
+            font-size: 30px;
+            background:linear-gradient(90deg,#00dbde, #fc00ff); 
+            -webkit-background-clip: text ;
+            -webkit-text-fill-color: transparent;
+           
+        }
+        @keyframes rainbow {
+            0% { color: red; }
+            20.67% { color: orange; }
+            33.33% { color: yellow; }
+            50% { color: green; }
+            66.67% { color: blue; }
+            83.33% { color: indigo; }
+            100% { color: violet; }
+        }
+        .start-box {
+            text-align:left; 
+            padding: 10px 20px; 
+            border: 2px solid #be5ca9; 
+            border-radius: 100px; 
+            display: inline-block; 
+        }
+        a {
+            color: #007bff; 
+            text-decoration: none; 
+        }
+        a:hover {
+            text-decoration: underline; 
+        }
+    </style>
+</head>
+<body>
+    <div style="background : linear-gradient(45deg,#d2001a, #f48e21, #23d5ab); padding: 220px;"> 
+        <div class="container">
+            <h1>Pixel Pioneers Welcomes You</h1>
+            <div id="p1">
+                <p>"EDUCATION IS ONE THING NO ONE  </p>
+                <p> CAN TAKE AWAY FROM YOU ."</p>
+            </div><br>
+            
+            <div class="start-box">
+                <a href="{% url 'education:index' %}">Let's Start</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
