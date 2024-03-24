@@ -4,17 +4,17 @@
 <div class="container-fluid py-5">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="card shadow-2g rounded border-primary"> <!-- Added border-primary class for border color -->
-          <div class="card-body bg-light"> <!-- Added bg-light class for light background color -->
-            <h2 class="card-title text-center text-dark mb-3">Feedback</h2> <!-- Changed text color to dark -->
+      <div class="col-md-8">
+        <div class="card shadow-2g rounded border-primary"style="width: 100%;"> 
+          <div class="card-body bg-light"> 
+            <h2 class="card-title text-center text-dark mb-3">Feedback</h2> 
             <form method="post">
               {% csrf_token %} 
               <!-- Security Purpose csrf_token --> 
               <div class="form-group">
                 {{ form.as_p }} 
               </div>
-              <button type="submit" class="btn btn-primary btn-block">Submit</button> <!-- Changed button color to primary -->
+              <button type="submit" class="btn btn-primary btn-block">Submit</button> 
             </form>
           </div>
         </div>
